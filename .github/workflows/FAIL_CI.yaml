@@ -1,0 +1,10 @@
+name: CI
+
+on: [push, workflow_dispatch]
+
+jobs:
+  test:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: It will fail
+        run: exit 1
